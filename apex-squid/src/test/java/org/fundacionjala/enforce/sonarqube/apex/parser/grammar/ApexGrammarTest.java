@@ -226,6 +226,12 @@ public class ApexGrammarTest extends ApexRuleTest {
         assertThat(parser).matches(fileToString);
     }
 
+    @Test
+    public void testTrigger() {
+        assertThat(parser)
+                .matches("trigger isMethod on Ojbect(before insert){}");
+    }
+
     private String readFileToString(String path, Charset encoding)
             throws IOException {
         byte[] encoded = Files.readAllBytes(Paths.get(path));

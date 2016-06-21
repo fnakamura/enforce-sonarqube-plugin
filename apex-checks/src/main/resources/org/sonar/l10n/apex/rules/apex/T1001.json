@@ -1,0 +1,13 @@
+{
+  "title" : "Only one trigger could be assigned to a object.",
+  "status": "ready",
+  "remediation": {
+    "func": "Constant\/Issue",
+    "constantCost": "1min"
+  },
+  "sqaleSubCharacteristic": "READABILITY",
+  "tags": [
+    "convention"
+  ],
+  "defaultSeverity": "Info"
+}

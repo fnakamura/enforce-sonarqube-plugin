@@ -1,0 +1,21 @@
+<!--
+  ~ Copyright (c) Fundacion Jala. All rights reserved.
+  ~ Licensed under the MIT license. See LICENSE file in the project root for full license information.
+  -->
+
+<p>
+    Trigger is not correct because there is another trigger for the same object.
+</p>
+
+<h2>Noncompliant Code Example</h2>
+<p>With default provided regular expression: ^[A-Z_][a-zA-Z0-9]+$</p>
+
+<pre>
+trigger ... blblbla ; ejemplo que no compila
+</pre>
+
+<h2>Compliant Solution</h2>
+
+<pre>
+trigger..  ejemplo que compila
+</pre>
